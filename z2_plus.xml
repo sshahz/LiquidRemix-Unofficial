@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SlimOTA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ota.xsd">
+    <Official>
+        <z2_plus>
+            <Filename>9.1.-20180720-OFFICIAL-z2_plus</Filename>
+            <RomUrl
+                id="rom"
+                title="LiquidRemix
+                description="Download latest build for Zuk Z2"></RomUrl>
+            <ChangelogUrl
+                id="changelog"
+                title="Changelog"
+                description="Click here to view latest changes">https://bit.ly</ChangelogUrl>
+            <OpenGappsUrl
+            	id="open_gapps"
+            	title="OpenGApps"
+            	description="Download latest OpenGApps for Android Oreo">https://opengapps.org</OpenGappsUrl>
+            <TelegramGroupUrl
+                id="telegram_group"
+                title="TelegramGroup"
+                description="Join Telegram For Support regarding features and bug fixes">https://t.me/LIQUIDZ2CHAT</TelegramGroupUrl>
+	    <MagiskUrl
+                id="magisk"
+                title="StableMagisk"
+                description="Download latest magisk zip for root">https://forum.xda-developers.com/apps/magisk</MagiskUrl>
+        </z2_plus>
+    </Official>
+</SlimOTA>
