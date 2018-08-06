@@ -2,23 +2,19 @@
 <SlimOTA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ota.xsd">
     <Official>
         <z2_plus>
-            <Filename>9.1.4-20180720-OFFICIAL-z2_plus</Filename>
+            <Filename>9.1.4-20180805-OFFICIAL-WEEKLY-z2_plus</Filename>
             <RomUrl
                 id="rom"
                 title="LiquidRemix"
-                description="Download latest build for Zuk Z2">https://androidfilehost.com/?fid=5862345805528065600</RomUrl>
+                description="Download Latest Build for Zuk Z2">https://androidfilehost.com/?fid=5862345805528067081</RomUrl>
             <ChangelogUrl
                 id="changelog"
                 title="Changelog"
-                description="Click here to view latest changes">https://pastebin.com/jgW0ZH8w</ChangelogUrl>
+                description="Click here to view latest changes">https://raw.githubusercontent.com/sf11/LiquidRemixOTA/oc-mr2/changelog_z2_plus.txt</ChangelogUrl>
             <OpenGappsUrl
             	id="open_gapps"
             	title="OpenGApps"
             	description="Download latest OpenGApps for Android Oreo">https://opengapps.org</OpenGappsUrl>
-            <TelegramGroupUrl
-                id="telegram_group"
-                title="TelegramGroup"
-                description="Join Telegram For Support regarding features and bug fixes">https://t.me/LiquidRemixChat</TelegramGroupUrl>
 	    <MagiskUrl
                 id="magisk"
                 title="StableMagisk"
