@@ -19,6 +19,10 @@
                 id="magisk"
                 title="StableMagisk"
                 description="Download latest magisk zip for root">https://forum.xda-developers.com/apps/magisk</MagiskUrl>
+	    <KernelUrl
+                id="kernel"
+                title="Kernel Sources"
+                description="Click here for kernel sources">https://github.com/LiquidRemix-Devices/kernel_device_z2_plus/tree/oc-mr2</KernelUrl>
         </z2_plus>
     </Official>
 </SlimOTA>
