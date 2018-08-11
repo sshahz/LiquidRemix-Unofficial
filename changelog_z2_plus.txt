@@ -1,2 +1,27 @@
-LIQUID REMIX Z2_PLUS CHANGELOGS:
-
+[img]https://i.imgur.com/ky5sZz7.png[/img]
+[b][size="4"][color=#2e8dff]Liquid Remix v9.1.4[/color][/size][/b]
+[size="4"][list]
+[*]Kernel Upstreamed to 3.18.118
+[*]Latest Caf Tag 'LA.UM.6.6.r1-09500-89xx.0' Merged
+[*]Thermal Engine Fixed thanks to @mshoaib7
+[*]Updated thermal blobs from Marlin
+[*]Update thermal configs
+[*]Switched to Qcom PowerHAL
+[*]Device Tree cleaned up thanks Mahek
+[*]New august security update (OPM6.171019.030.H1)
+[*]Frameworks base bug fixes and security updates
+[*]Lounge: Added App Circle Sidebar
+[*]Lounge: Added OP like navigation gestures
+[*]Lounge: Fixed QS Tile accents
+[*]Added call recording 
+[*]Added Gaming Mode Tile
+[*]Phone,Contacts,Documents apps are now themeable
+[*]Screenrecord: Improvements for notification
+[*]Improved MTP
+[*]Added ScreenStablization toggle in disaplay setiings
+[*]Added ScreenStablization QS Tile
+[*]Improved Theming and Substratum Support
+[*]Improved IMS and VoLTE support
+[*]Wired/BT headset: make ringtone audio focus customizable
+[*]Added ripple effect to the buttons to the left and right of the brightness slider[/list]
+[/size]
