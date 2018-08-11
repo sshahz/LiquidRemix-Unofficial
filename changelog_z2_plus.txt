@@ -4,9 +4,11 @@ Liquid Remix Zuk Z2 Plus Changelog:
 [*]Latest Caf Tag 'LA.UM.6.6.r1-09500-89xx.0' Merged
 [*]Thermal Engine Fixed thanks to @mshoaib7
 [*]Updated thermal blobs from Marlin
-[*]Update thermal configs
+[*]Updated thermal configs
 [*]Switched to Qcom PowerHAL
 [*]Device Tree cleaned up thanks Mahek
+[*]Ota Support added for Zuk Z2
+[*]Link for kernel sources added in Settings
 [*]New august security update (OPM6.171019.030.H1)
 [*]Frameworks base bug fixes and security updates
 [*]Lounge: Added App Circle Sidebar
