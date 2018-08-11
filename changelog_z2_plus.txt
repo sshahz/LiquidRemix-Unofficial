@@ -1,6 +1,5 @@
-[img]https://i.imgur.com/ky5sZz7.png[/img]
-[b][size="4"][color=#2e8dff]Liquid Remix v9.1.4[/color][/size][/b]
-[size="4"][list]
+Liquid Remix Zuk Z2 Plus Changelog:
+<<<<<<< 9.1.4 Official 2018/08/10 >>>>>>>
 [*]Kernel Upstreamed to 3.18.118
 [*]Latest Caf Tag 'LA.UM.6.6.r1-09500-89xx.0' Merged
 [*]Thermal Engine Fixed thanks to @mshoaib7
@@ -25,3 +24,4 @@
 [*]Wired/BT headset: make ringtone audio focus customizable
 [*]Added ripple effect to the buttons to the left and right of the brightness slider[/list]
 [/size]
+------------------------------------------------------------------------------------------------
