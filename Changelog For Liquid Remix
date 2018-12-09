@@ -1,0 +1,421 @@
+=======================
+     12-09-2018
+=======================
+
+
+   * build/make/
+bc61a7913 build: include vendor board config liquid
+71832ba00 build: Also replace techpack/audio old-style kernel header
+f11b080e6 build: Automatically replace old-style kernel header includes with new header lib
+
+   * build/soong/
+9499d69b soong sbox: Add option to allow copying all generated output
+8656bfab soong: Add java sources overlay support
+
+   * frameworks/base/
+abd5b9feea4 Revert "null check before accessing getCurrentScore()"
+f7f58a4e7eb Revert "Update network score from NetworkAgent"
+dc8745f070a Revert "Call DetectCountry only once per call"
+94ca0038484 Revert "Add ICCID into CarrierIdentifier"
+72c0cba3471 Revert "Add config to disable CDMA call forward/waiting"
+e63f28add50 Revert "Use proper coded alphabet when a contact is written into EF_ADN of USIM."
+baa8414e307 Revert "IMS: Propagate call session property changed message"
+913677e6208 Revert "IMS: Conference URI support."
+8017ee15624 Revert "IMS: Propagate RTT capability of the called party to UI"
+88cb4b929b5 Revert "Telecom: Add support for call timer reset on CDMA MO call"
+67c2c5b0d7f Revert "IMS: Add CALL_TYPE for audio and video inactive"
+4e034505e0c Revert "Pass correct parameters to API sendMultipartTextMessage"
+c4d76ea445d Revert "FR49835: ImsMultiEndPoint - Sip Notify Change"
+497c08d9ab3 Revert "FR49835: ImsMultiEndPoint - Sip Notify Change"
+b0f68a001a8 Revert "Emergency SMS carrier config flag"
+99441ed4178 Revert "IMS: Adding support for TIR/TIP permanent provisioning"
+94ebbe1f3fa Revert "IMS: Initialize provisioning status to unknown."
+49fd7832efb Revert "Avoid WiFi to Cellular silent redial when roaming"
+482f27806c9 Revert "IMS: Support for Implicit Call Rejection"
+eb3c9a1fa71 Revert "Fix Possible Deadlock with getFeatureState"
+468957ad145 Revert "IMS: Support Robocall Feature For MT VOLTE Calls"
+f03a80acc39 Revert "Telephony: Add DisconnectCause values for clear code"
+9f1036625c2 Revert "IMS: Add flag to control reset UT capability"
+dfe09a7fe9e Revert "IMS: Add UT interface to query CF setting for service class."
+55f79657384 Revert "SMS: Parsing of CDMA MMS notification carried by SMS"
+be3eb6bf888 Revert "Telephony: Add 7bit Ascii support for long message"
+412b063e712 Revert "IMS-VT: Add config to control holding a video call"
+5ea206c3b9f Revert "Telephony: Get SIM card capacity count of SMS"
+80a1b4890ae Revert "Telephony: Introduce a base class for ISMS.aidl."
+1df1e7e9a43 Revert "Make it possible to hide signal strength via Carrier Config"
+764b1e65687 3G Signal Icon Fix
+52610bc55c0 PMS: Improve code stability and avoid vm reboot
+acd640970f8 PMS: No need to call permissionsState.getPermissions
+33b4fda1eba frameworks: Add unlinked ringtone and notification volumes
+6ad86b99300 Merge tag 'android-9.0.0_r21' into pie-test
+9b6ed97026d systemui: update navbar tile for smartnav
+c84e5e33762 base: remove deviceutils class import
+794a328f98a FontService: fix potential NPE and handle disabled packages properly
+bfa654ec073 Bluetooth: Fix NPE when accesing Manufacturer Data of invalid ScanRecord
+1cfc71f7151 Recents: add pinch-in gesture on tasks to Clear All
+e4b36203902 Recents: Allow closing empty view via tapping
+9c570e16337 hwui: stability: check mmap return value
+224f24ccad5 hwui: Fix a use-after-free found by HWAsan
+5bdf0276a6a Preserve x18 while preloading SP-HALs in the zygote
+ca9d441b575 Move vendor blacklist overlays to ThemeAccentUtils
+ecd204ea94d Ignore vendor overlays that must be on system/app
+5d18c3cef9b Change swipe up gesture settings config [1/4]
+2dee65e9f91 Custom Icons handler: add launcher icon cache support
+c3f4751b7bf Stock Recents/Overview icon pack support [2/3]
+72c218bf432 Revert "base: Add MD2 style Switch"
+fb6f696448c Revert "Themes: Fix issue applying themes with certain wallpapers / LWP"
+424ee7a7aab Pulse: allow setting fading blocks opacity [1/3]
+da0a87097e9 Pulse: Add bar animation smoothing [1/3]
+48b04a99b2e Add Pulse Lava Lamp start and end colors (1/3)
+fde5484ccca Theme settings dashboard icons [1/3]
+d9fdae63545 Disable grid recents [1/2]
+c8d555b1205 Notification ticker: don't tick in do not disturb
+88008699cbf Only show bluetooth icon when connected
+
+   * hardware/libhardware/
+11a192ae power: Add new power hints
+
+   * packages/apps/LiquidLounge/
+55fb654 Make recents icon pack independent of recents style
+
+   * packages/apps/Settings/
+2a4a64fd5f MSIM: Fix user set DDS sub in hotswap cases.
+2eabccc40a Settings: Add switch for linked ring and media notification volumes
+daf6e79063 settings: disable full nav gestures
+
+   * vendor/liquid/
+62bce92e liquid: Add techpack/audio to include path also
+f9441ed5 liquid: Consider techpack/audio when generating kernel headers
+54aaaa2e kernel.mk: Support kernels that use LTO
+439fb942 kernel: Remove kernel{x}config
+55a61635 kernel: Remove deprecated flag errors
+1f8a2bdf vendor/liquid: Remove kernel.mk headers generation
+1ea0e25b liquid: Dynamically generate kernel headers using liquid generator
+022c8013 vendor/liquid: Add soong generator module type
+afd4203e liquid: Move some kernel definitions to BoardConfigKernel
+2a02eeff Revert "soong_config: Add TARGET_NEEDS_PLATFORM_TEXT_RELOCATIONS"
+2d4edc46 vendor/lineage: Add support for java source overlays
+e7673c1c Add Nvidia enhancements soong flag
+4f448a48 qcom: Declare PRODUCT_SOONG_NAMESPACES for HALs
+a22c99af liquid: Move QC board variables earlier
+307eefad liquid: Set TARGET_CRYPTFS_HW_PATH if HW crypto is enabled
+ce34f4ef Revert "kernel: Remove deprecated flag errors"
+9814516a vendor: change 2nd sim card ringtone
+726390c2 permissions: grant needed permissions
+
+=======================
+     12-08-2018
+=======================
+
+
+=======================
+     12-07-2018
+=======================
+
+
+=======================
+     12-06-2018
+=======================
+
+
+   * build/kati/
+209721c SetAffinityForMultiThread before execve
+
+   * frameworks/opt/telephony/
+390f0c229 TelephonyComponentFactory: Overload makeSubscriptionInfoUpdater
+ac256a6d5 MSIM: Send sim loaded intent only after subinfo records added.
+f52b1421a MSIM: Add entry for mobile data setting in settings xml
+0693c3e01 Refresh SIM operator numeric for multi-mode SIM
+1832f7a7a Allow LocaleTracker to work even if wifi is not up (FDE)
+52bd84bea telephony: Change sim card name when isn't provisioned
+0e71f9db1 Support Fetching IMSI MCC and MNC for RuimRecords.
+540a46f73 SimPhoneBook: Add ANR/EMAIL support for USIM phonebook.
+aeef70349 MSIM: Fix to refresh active subscription info cache.
+30f2f3123 MSIM: Fix to set Mcc & Mnc with correct subId
+0d4c9a360 Telephony: Enable data call on CSIM.
+47bf0a24a telephony: Fix loading of non Oreo-MR1 QTI blobs
+a12d5dec3 MSIM:Fix iccid issue during android upgrade.
+b641d959b Fix iccid issue during android upgrade.
+aa80989c3 DCTracker: fix loading of Oreo qti-telephony-common blob
+88e431d13 Telephony: Send INITIAL_ATTACH only when it is applicable.
+cda08a9d0 Enable vendor Telephony plugin: MSIM Changes
+5e620afe4 Enable vendor Telephony plugin
+85758fc61 Introduce TelephonyExtUtils
+e5e67bd8b add for community - community is not pleased
+749e7984f Merge tag 'android-9.0.0_r16' into pie-test
+600b41462 telephony: Squashed support for simactivation feature
+9bf031ac2 DcTracker: Change access modifier of isNvSubscription to protected
+3dbeb470d PhoneFactory: fix creating a cdma phone type
+8744a9a32 Telephony: Enable NV based CDMA data call.
+2cb92270f MMS: Update apnProfileID for MMS only apn.
+ecf262b65 Fix signal icon is not shown
+
+   * hardware/liquid/telephony/
+dcffa33 Implement missing methods due to caf merge
+f74e2ca telephony: initial liquid telephony commit
+
+   * packages/services/Telecomm/
+5fd97b0f Phone ringtone setting for Multi SIM device
+58ad3e15 Merge tag 'android-9.0.0_r16' into pie-test
+a1afef61 Telecomm: Add Flashlight blink on incoming calls [3/3]
+f4c5cf81 Add back increasing ring feature (3/3)
+712fe5f9 incall vibration options [2/3]
+e97de469 Telecomm: Squashed phone_type switch support
+38ac6824 Telecomm: adaptive icon
+
+   * packages/services/Telephony/
+1315971e5 services/Telephony - Breathing missedcall/sms/voicemail [3/5]
+23b1052b0 Telephony: Add ERI configuration for U.S. Cellular
+776ece1cd Use proper summary for network select list preference on dsds/dsda/tsts
+0c30d8d80 Implement toggleLte
+9a3d5103c Telephony: adaptive icon
+a925d048a Reload CarrierConfig based on Build.LIQUID_FINGERPRINT
+
+   * vendor/codeaurora/telephony/
+e9d8485 telephony-ext: Move to Android.bp
+665efce telephony: Allow devices to provide their own telephony-ext
+
+   * vendor/liquid/
+6a1f7ad2 vendor: build ims with caf telephony
+349924d0 vendor: enable all wifi displays
+ea23047c vendor: update our default build props
+b98147b6 vendor: disable all adb authentication
+
+=======================
+     12-05-2018
+=======================
+
+
+   * packages/providers/TelephonyProvider/
+7679537 Merge tag 'android-9.0.0_r21' into lineage-16.0-android-9.0.0_r21
+
+   * system/update_engine/
+a1a4c81 Merge tag 'android-9.0.0_r21' into lineage-16.0-android-9.0.0_r21
+
+=======================
+     12-04-2018
+=======================
+
+
+   * bionic/
+62fcd58c6 Merge tag 'android-9.0.0_r21' into pie
+4d9c1facc Actually restore pre-P mutex behavior
+
+   * build/make/
+80c3f6251 Merge tag 'android-9.0.0_r21' into pie
+
+   * device/qcom/sepolicy/
+0aba9b4 Allow charger access to /mnt/vendor
+50c9e04 sepolicy: include liquid sepolicy
+
+   * frameworks/av/
+a563307fa AAudioService: Set Audio dl parameters by system property
+c94560b8c AAudioService: Single thread exclusive to DL
+127f3a543 SchedulingPolicyService: DL policy request through Binder
+
+   * frameworks/base/
+b5d9c7e34e9 base: featureize ro.recents.grid and Go Layout
+002cbcb7578 Speed up the notification panel pulldown animation when called externally
+5974b285390 Add kill button to notification guts [1/2]
+0daafc70a2f BatteryStats: Correct formatter for pkginst in battery stats.
+fb1c3ed3956 Fix uid check error when activity is running in other process
+5cf4f67f5be Nullify the default wallpaper component if it does not exist
+5ee533796ec Use brightness slider better values also for Settings brightness slider
+dd4409ed866 base: support overlays in system
+638d61f2c22 Use fdeCheckPassword error code to indicate pw failure
+321870098a3 hwkeys: Fix sound search
+44b5ba6272a hwkeys: Disable screenrecord
+86d93273218 hwkeys: Enable partial screenshot
+554b5fb003b Fix and improve lockscreen visualizer
+2359e458581 SmartNav: Implement pulse for stock navbar
+d61ea0b716e Initial checkin on Pie for SmartNav navigation suite [1/4]
+0cb84efdc08 NavigationBar visible from DUI: Initial checkin for Oreo
+95a46d8fd25 Revert "base: Add option to hide the navigation bar [1/2]"
+a683bc7441c Added toast when a screenshot is deleted
+72ec0471725 Revert "base: Allow to specify multicolor notification led support [1/2]"
+cd5bbf5f0d2 Revert "Be more strict about triggering notification lights"
+5b5ea3f4b14 Cleanup brightness slider toggle [1/2]
+c486b25e376 WeatherProvider: Set default MetricUnit to Fahrenheit
+8b722d14592 SystemUI: Implement weather on lockscreen
+13407d8ad03 Revert OmniJaws [1/2]
+aa9402ab8bd Fix NullpointException in NetworkPolicyManagerService
+3b592847cd3 Brightness slider + - buttons: use more granular values
+0f8a452c8b3 base: Option to use volume keys to control ring volume anytime (1/2)
+ca7515d5212 hw-keys: enable powermenu on hwkeys actions
+a6f22fdd725 Full gesture navbar: add haptic feedback to back action
+71a1bb83753 Full gestures nav: longpress to move keyboard cursors [1/2]
+da3a8e576eb Fix notifications for some apps if Less notification sounds is enabled
+
+   * frameworks/native/
+bed3d172a Merge tag 'android-9.0.0_r21' into pie
+
+   * packages/apps/Bluetooth/
+7e17f5bb Merge tag 'android-9.0.0_r21' into pie
+
+   * packages/apps/LiquidLounge/
+2baa257 Stock Recents/Overview icon pack support [3/3]
+508c689 Add translations from Brazil
+
+   * packages/apps/LiquidOTA/
+51f41af Add translations from Brazil
+
+   * packages/apps/Settings/
+c875bcd94d Change swipe up gesture settings config [2/4]
+
+   * system/bt/
+cbd9cd629 Merge tag 'android-9.0.0_r21' into pie
+
+   * system/core/
+dd1377b44 set permissions on /system/addon.d/ and files within.
+357ffe28b DO NOT MERGE: lmkd: retune rate at which processes are killed
+d2be6589e lmkd: rate-limit and cleanup failed kill reports
+589694db3 init: No fsck for /data and /cache when shutdown
+a6e9f8208 init: Cleanly exit subcontext processes upon init's death
+43ab33768 init.rc: don't start console unless asked to
+21bf8b792 libpixelflinger: Avoid using x18 register in blend implementation
+973ce88e7 init.rc: Show bootanimation after decrypt
+
+   * system/vold/
+3c34c31 Merge tag 'android-9.0.0_r21' into pie
+
+   * vendor/liquid/
+5c0f254f Change swipe up gesture settings config [4/4]
+3386dce4 Add application for Wallpapers (LiquidPapers)
+
+=======================
+     12-03-2018
+=======================
+
+
+   * frameworks/base/
+22f0e2df095 Update PageTypeInfoParser to be less restrictive.
+cdcf1d2bb1b Check for null path in getInternalPathForUser
+db8b9ef5d4d PowerMenu: add Screenrecord to the menu [1/2]
+95d763f453b Add progress for font apply [1/2]
+bfe4c43a6c4 Dynamic font fix for FDE devices
+e2ba593acf6 Fonts: patched a few need files for boot
+e9646350bcc Fonts: Update keyguard when font changes
+4882af01cbc bringup: Fontservice
+6f601f3d405 base: Volume dialog timeout (1/2)
+5ca42952eff Prevent crash when multiple Screenshot request
+13dfa6758cb Crash app on foreground service notification error
+369dcb9c2f2 Check the size of the ArrayList in ActivityManager.forceStopPackage()
+75459f873ed Fw_base - Disable Immersive Messages [1/2]
+e5716c7b272 Fw_base - Get the reboot menus to follow power menu animations previously merged
+af14a8a234c Fw_base - Rotation anim to Power and reboot menu [1/2]
+70970fcc73f Fw_base - Breathing missedcall/sms/voicemail [1/5]
+65522a223d8 FWBase: Add 7 more power menu animations [1/2]
+76fb5946c24 Power Menu animations [1/2]
+0eaa986c483 Fix QS tile animations
+e85ed60c5e0 Lockscreen visualizer: fix SystemUI FC when using Pulse
+e7caed740b9 Hide tiles title: longpress will launch detail view
+
+   * packages/apps/Launcher3/
+de1517e96 Import proper utils
+
+   * packages/apps/LiquidLounge/
+e1d1c0d Disable grid recents [2/2]
+8129cb6 Disable recents settings if using quickstep
+f6a796a settings: featureize ro.recents.grid and Go Layout [2/2]
+8ee64a3 Add kill button to notification guts [2/2]
+105357b Initial checkin on Pie for SmartNav navigation suite [3/4]
+3035069 Cleanup for SmartNav
+fec3aea Cleanup brightness slider toggle [2/2]
+0cff69d Integrate Weather client [2/2]
+b861ef6 Revert OmniJaws [2/2]
+ddf8fb5 PowerMenu: add Screenrecord to the menu [2/2]
+6f7e4cb Option to use volume keys to control ring volume anytime (2/2)
+f0561fa Volume dialog timeout (2/2)
+4d48095 Disable Immersive Messages [2/2]
+02d6dff Breathing missedcall/sms/voicemail [5/5]
+95c3a39 Rotation anim to Power and reboot menu [1/2]
+464f142 Power Menu animations [2/2]
+7667614 lounge: missing advanced doze settings
+
+   * packages/apps/Settings/
+a89f30a2bc Theme settings dashboard icons [3/3]
+565a05fa2b Theme settings dashboard icons [2/3]
+9b3361e296 Settings: We use RECENTS_LAYOUT_STYLE for Pie Recents Check
+6b78eb997a Initial checkin for SmartNav navigation suite [2/4]
+
+   * packages/apps/SmartNav/
+8c23fe4 Smartbar: Code smart
+4322fa9 Pulse: allow setting fading blocks opacity [2/3]
+17a10a6 Pulse: Add bar animation smoothing [2/3]
+a669925 Add Pulse Lava Lamp start and end colors (2/3)
+7f72ae2 Fling: Reapply dark intensity when toggling logo
+f11624f SmartNav: Implement pulse for stock navbar
+050379c Smartbar: keep pressing on ime arrows to move kb cursor
+842c491 DUI: fix button custom image icon not being loaded on encrypted device
+33419d9 Improve fling icon
+cbccce3 Add delay while applying dark intensity
+68da23a Pulse: add back auto color based on albumart
+028fe1b Use offload thread (ExecutorService) to start pulsing
+bc36e57 Fix util imports
+
+   * packages/apps/SmartNavSettings/
+1d32d9e Pulse: allow setting fading blocks opacity [3/3]
+531b071 Pulse: Add bar animation smoothing [3/3]
+62d73ff Add Pulse Lava lamp start and end colors (3/3)
+c1c169b Pulse blacklist [2/2]
+da37c1a Move in some settings
+cccf2a6 Initial checkin for SmartNavSettings    *
+
+=======================
+     12-02-2018
+=======================
+
+
+   * packages/apps/Launcher3/
+480f808d9 Swipe down to show notifications panel
+299542f69 Add double tap to sleep gesture
+3bd9347f2 Use View.getHeight() instead of Canvas.getHeight() for PageIndicatorDots
+8215ec3d0 Change swipe up gesture settings config [3/4]
+8c668c421 Update prebuilt shared lib from our Systemui tree source
+
+=======================
+     12-01-2018
+=======================
+
+
+   * packages/apps/Launcher3/
+8747fd4eb Add back missing styles
+6b458d0e0 Merge tag 'android-9.0.0_r12' of https://android.googlesource.com/platform/packages/apps/Launcher3 into pie-new
+f850885cb Elevate to 'core/platform' app'
+d13aea318 Add SearchLauncher target
+36dd89809 AllAppsSearchBox: use rounded corners
+742333008 Icons: don't wrap icons again when using an icon pack
+05cbccd59 Launcher drawer icon pack: use Recents icons engine
+81c4835f9 Revert "Workaround the Icon pack issue on adaptive apps"
+57714e471 Stock Recents/Overview icon pack support [1/3]
+0cce064a8 Revert "Launcher3: Quickstep needs to rely on System rounded corner radius"
+
+   * system/netd/
+835321c Merge remote-tracking branch 'aosp/pie-gsi' into lineage-16.0-gsi
+ab8ef3f Merge pi-qpr1-release PQ1A.181105.017.A1 to pi-platform-release am: c1e8496cc2
+
+=======================
+     11-30-2018
+=======================
+
+
+   * hardware/qcom/power/
+1a2785e power: Drop default POWER_HINT_INTERACTION routine
+
+   * packages/apps/Settings/
+2c1f6023f1 Revert "Settings: Allow to specify multicolor notification led support [2/2]"
+43913ae4b5 Settings: Hide notification light color preference if no multicolor led
+657b0315df Remove QS activities for weather tile
+428abe968f Phone ringtone setting for Multi SIM device
+e6c41d1e3a Make Font Picker play nice with substratum
+2b6f9b13ec Add progress for font apply [2/2]
+b93c3f5f95 Add Font preference for font manager
+e6b0f3f4f4 Full gestures nav: longpress to move keyboard cursors [2/2]
+
+   * vendor/liquid/
+8fc2ab56 vendor: Build WeatherProvider
+f52456e1 vendor: add more fonts
+47decd23 Make number of days to generate changelog configurable.
+2266f557 vendor: don't build email or jelly
+ffac4197 vendor: Add back fonts
+
